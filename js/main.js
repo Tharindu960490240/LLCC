@@ -376,7 +376,14 @@
       "Thanks " +
       name.split(" ")[0] +
       ", we have your details. A club member will contact you soon.";
+
+    status.hidden = false;
     form.reset();
+
+    setTimeout(() => {
+      status.textContent = "";
+      status.hidden = true;
+    }, 3000);
   });
 
   /* ---------- Footer year ---------- */
